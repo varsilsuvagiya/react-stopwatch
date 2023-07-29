@@ -30,6 +30,7 @@ class Stopwatch extends Component {
   }
 
   startButton = () => {
+    alert("sv")
     this.timerId = setInterval(this.runClock, 1000)
   }
 
@@ -43,6 +44,7 @@ class Stopwatch extends Component {
 
   restartButton = () => {
     this.setState({timeInSeconds: 0})
+    
     clearInterval(this.timerId)
   }
 
