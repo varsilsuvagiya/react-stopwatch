@@ -45,6 +45,7 @@ class Stopwatch extends Component {
   restartButton = () => {
     this.setState({timeInSeconds: 0})
     
+    
     clearInterval(this.timerId)
   }
 
